@@ -17,7 +17,16 @@ public class MainActivity extends AppCompatActivity {
         MyApplication app = (MyApplication) getApplication();
         app.count = 8;
 
+
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MyApplication app = (MyApplication) getApplication();
+        app.back = false;
+    }
+
     public void click1(View v)
     {
         Intent it = new Intent(MainActivity.this, Main2Activity.class);

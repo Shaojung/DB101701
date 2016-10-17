@@ -8,4 +8,5 @@ import android.app.Application;
 
 public class MyApplication extends Application {
     int count = 0;
+    boolean back = false;
 }
